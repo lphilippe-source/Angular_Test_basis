@@ -1,0 +1,8 @@
+*** TP Carousel Component ***
+
+Créer un composant Angular qui affiche une photo différente, 
+de manière séquentielle et à intervale régulier (ex: 5 secondes)
+
+Le composant se base sur une liste de photos (chemin absolu) 
+spécifiée dans la classe .ts. Lorsque la dernière photo est atteinte
+on repart de la première photo de la liste

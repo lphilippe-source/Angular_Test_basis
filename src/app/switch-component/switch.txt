@@ -1,0 +1,9 @@
+*** TP Switch Component ***
+
+En vous inspirant de la capture, créer un composant Angular 
+affichant un bouton bascule "oui/non"
+
+L'apparence du bouton change un fonction de la valeur choisie
+
+Quand oui est choisi, on affiche dans la console la valeur: 1
+Quand non est choisi, on affiche dans la console la valeur: 0

@@ -1,0 +1,22 @@
+*** TP Virtual Keyboard Component ***
+
+En vous inspirant de la capture, créer un composant 
+Angular affichant:
+
+- une zone de remplissage à 6 cases vides 
+- un clavier à 16 touches (4 x 4)
+- un bouton de validation (désactivé par défaut)
+
+Un clic sur une touche contenant une valeur numérique
+alimente séquentiellement une case vide de la zone d'affichage
+
+Un clic sur une touche vide ne provoque rien
+
+Lorsque les 6 cases sont "remplies", rendre actif de bouton
+de validation.
+
+Un clic sur le bouton de validation affiche le code choisi
+dans la console
+
+
+Option: affectation aléatoire des valeurs numériques sur les touches
