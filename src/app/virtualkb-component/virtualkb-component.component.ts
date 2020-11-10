@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 
-// interface Code {
-//   src: string;
-//   alt: string;
-// }
+
 @Component({
   selector: 'app-virtualkb-component',
   templateUrl: './virtualkb-component.component.html',
@@ -13,7 +10,7 @@ export class VirtualkbComponentComponent {
 
   numberButton:number[]=[0,1,2,3,4,5,6,7,8,9]
   arrEmpty:number[] = new Array(16)
-  arrCode = new Array(6)
+  arrCode:string[] = new Array(6)
   code0:string
   code1:string
   code2:string
@@ -27,19 +24,19 @@ export class VirtualkbComponentComponent {
     this.deleteCode()
   }
 
-  deleteCode=()=>{
+  deleteCode=():void=>{
     this.arrCode.fill(' _ ')
     this.displayCode()
   }
 
-  displayCode(){
+  displayCode():void{
     let checkContent = this.arrCode.map((val,key)=>{
       console.log('key: '+key,'value: '+val)
           this["code"+key]=val
     })
   }
 
-  clickButton(e:string = null){
+  clickButton(e:string = null):void{
     if(e){
         let index = this.arrCode.indexOf(' _ ')
       if(index!==(-1)){
