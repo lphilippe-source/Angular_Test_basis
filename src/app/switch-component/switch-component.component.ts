@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class SwitchComponentComponent {
   toggle:string = 'oui'
   constructor(){
-    console.log(1)
+    // console.log(1)
   }
 
 

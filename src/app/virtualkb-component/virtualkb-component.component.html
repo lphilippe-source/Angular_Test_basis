@@ -1,34 +1,35 @@
 <p>virtualkb-component works!</p>
 <h1>
-<span> _ </span><span> _ </span><span> _ </span><span> _ </span><span> _ </span><span> _ </span>
+<span [innerText]="code0">  </span><span [innerText]="code1">  </span><span [innerText]="code2">  </span><span [innerText]="code3">  </span><span [innerText]="code4">  </span><span [innerText]="code5">  </span>
 </h1>
 <div style="display:flex; flex-direction: column;">
+    <button style="width:60px" (click)="deleteCode()">Delete</button>
     <div style="display:flex;">
-        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">1</span></div>
-        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">2</span></div> 
-        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">3</span></div>    
-        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">4</span></div>
+        <div (click)="clickButton(field.innerText)"  #field style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">{{ arrEmpty[0] }}</span></div>
+        <div (click)="clickButton(field2.innerText)"  #field2 style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">{{ arrEmpty[1] }}</span></div>
+        <div (click)="clickButton(field3.innerText)"  #field3 style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">{{ arrEmpty[2] }}</span></div>
+        <div (click)="clickButton(field4.innerText)"  #field4 style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">{{ arrEmpty[3] }}</span></div>
     </div>
 
     <div style="display:flex;">
-        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">5</span></div>
-        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">6</span></div> 
-        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">7</span></div>    
-        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">8</span></div>
+        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">{{ arrEmpty[4] }}</span></div>
+        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">{{ arrEmpty[5] }}</span></div> 
+        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">{{ arrEmpty[6] }}</span></div>    
+        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">{{ arrEmpty[7] }}</span></div>
     </div>
 
     <div style="display:flex;">
-        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">9</span></div>
-        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">10</span></div> 
-        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">11</span></div>    
-        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">12</span></div>
+        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">{{ arrEmpty[8] }}</span></div>
+        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">{{ arrEmpty[9] }}</span></div> 
+        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">{{ arrEmpty[10] }}</span></div>    
+        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">{{ arrEmpty[11] }}</span></div>
     </div>
 
     <div style="display:flex;">
-        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">13</span></div>
-        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">14</span></div> 
-        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">15</span></div>    
-        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">16</span></div>
+        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">{{ arrEmpty[12] }}</span></div>
+        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">{{ arrEmpty[13] }}</span></div> 
+        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">{{ arrEmpty[14] }}</span></div>    
+        <div style="display:flex;border:1px solid aquamarine;width:50px;height:50px;background-color: beige;"><span style ="margin:auto;font-size:x-large">{{ arrEmpty[15] }}</span></div>
     </div>
 
     <button style="width:60px">Valider</button>
