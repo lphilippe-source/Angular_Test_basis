@@ -1,0 +1,19 @@
+<p>user-component works!</p>
+<div>
+    <input type="text">
+    <button>valider</button>
+</div>
+<table  >
+    <tr>
+        <td>PRENOM</td>
+        <td>NOM</td>
+        <td>CAGNOTTE</td>
+    </tr>
+    <tr *ngFor="let user Of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.firstname }}</td>
+        <td #wallet>{{ user.wallet }}</td>
+        <button (click)="editUser(wallet.innerText)">editer</button>
+    </tr>
+    
+</table>

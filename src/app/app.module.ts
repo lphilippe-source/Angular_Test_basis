@@ -8,8 +8,11 @@ import { AppComponent } from './app.component';
 // import { ParentShirtComponent } from './parent-shirt/parent-shirt.component';
 // import { ChildPriceComponent } from './child-price/child-price.component';
 // import { ChildEventMiniatureComponent } from './child-event-miniature/child-event-miniature.component';
-import { PlayerFormComponent } from './player-manager/player-form/player-form.component';
-import { PlayerManagerModule } from './player-manager/player-manager.module';
+// import { PlayerFormComponent } from './player-manager/player-form/player-form.component';
+// import { PlayerManagerModule } from './player-manager/player-manager.module';
+// import { UserComponentComponent } from './user-list/user-component/user-component.component';
+import { UserListModule } from './user-list/user-list.module';
+import { HttpClientModule } from '@angular/common/http';
 // import { FruitComponent } from './fruit/fruit.component';
 // import { MainComponent } from './fruit/main/main.component';
 
@@ -24,12 +27,15 @@ import { PlayerManagerModule } from './player-manager/player-manager.module';
     // ChildEventMiniatureComponent,
     // FruitComponent,
     // MainComponent
-    PlayerFormComponent
+    // PlayerFormComponent
+    // UserComponentComponent
 
   ],
   imports: [
     BrowserModule,
-    PlayerManagerModule
+    UserListModule,
+    // PlayerManagerModule
+    HttpClientModule
 
   ],
   providers: [],
