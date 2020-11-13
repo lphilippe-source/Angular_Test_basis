@@ -9,6 +9,7 @@ import { UserService } from '../user.service';
 export class UserComponentComponent implements OnInit {
 
 users:[]
+wallet:number = 0
   constructor(private UserService: UserService) { }
 
   ngOnInit(): void {
@@ -22,6 +23,6 @@ users:[]
     })
   }
   editUser(e){
-    console.log(e)
+    this.wallet=e
   }
 }
