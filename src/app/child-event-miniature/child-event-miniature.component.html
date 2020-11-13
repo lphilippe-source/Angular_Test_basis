@@ -1,0 +1,10 @@
+<section>
+    <h3>Flocking</h3>
+    <span class="flock selected">No flock</span>
+    <span class="flock" *ngIf="flockImage()">
+        <select (change)="onPlayerChange($event)">
+            <option>Select Player</option>
+            <option *ngFor="let player of playerList, let i=index">{{ player.name }}:{{ player.numero }} </option>
+        </select>
+        Players</span>
+</section>

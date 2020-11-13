@@ -1,0 +1,34 @@
+<p>parent-shirt works!</p>
+    <h1>TP juvejersey</h1>
+    <div id="app">
+        <div id="photoArea">
+            <div id="front-img-container">
+                <h2 id="flocktext" [innerText]="flockText"> </h2>
+                <h2 id="flocknumber" [innerText]="flockNumber"> </h2>
+                <img id="main-img" [src]=mainImg />
+            </div>
+            <div (click)="changeImage($event)" id="thumbs">
+                <img [src]=shirt.thumbs.image1.url/>
+                <img [src]=shirt.thumbs.image2.url/>
+                <img [src]=shirt.thumbs.image3.url/> 
+                <img [src]=shirt.thumbs.image4.url/>
+            </div>
+        </div>
+        <div id="settingArea">
+            <h2>Juventus Home Authentic Jersey 2020/21</h2>
+            <app-child-event-miniature
+             [mainImg]="mainImg" 
+             [playerList]="playerList" 
+             [flockText]="flockText" 
+             [flockNumber]="flockNumber"
+             (changingPlayer)="choosePlayer($event)">    
+            </app-child-event-miniature>
+            <app-child-price 
+            [shirt]="shirt"
+            [isFlock]="isFlock"
+            >
+            </app-child-price>
+    
+        </div>
+    </div>
+

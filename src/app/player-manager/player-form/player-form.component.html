@@ -1,0 +1,11 @@
+<p>player-form works!</p>
+<h2>ajouter un joueur:</h2>
+<input #field (keyup)="searchPlayer($event)" type="text"/>
+<button (click)="addPlayer(field.value)">Envoyer</button>
+<button (click)="searchPlayer(field.value)">Rechercher</button>
+
+<h2>Liste de joueurs</h2>
+<div *ngFor="let player of player">
+    <div>prénom: {{ player.firstname }} nom: {{ player.lastname }}</div>
+
+</div>

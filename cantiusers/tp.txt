@@ -1,0 +1,14 @@
+*** TP Cantiusers ***
+
+Créer un module Angular (mono ou multi composant) affichant la liste 
+des utilisateurs depuis l'api lunchtime.
+
+Champs à afficher: name, firstname, wallet
+
+L'application doit permettre d'augmenter ou de diminuer le montant du "wallet"
+en effectuant les requêtes ajax correspondantes et afficher un message dans 
+l'interface afin d'informer l'utilisateur de l'issue de sa requête
+
+En option: ajouter un mécanisme de filtre en "full text" sur le nom des utilisateurs
+
+

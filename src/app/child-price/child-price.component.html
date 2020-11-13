@@ -1,0 +1,26 @@
+<section>
+    <h3>Badges</h3>
+    <div id="badges">
+        <img [src]="shirt.badges.badge1.url" alt="">
+        <img [src]="shirt.badges.badge2.url" alt="">
+        <img [src]="shirt.badges.badge3.url" alt="">
+    </div>
+    <div id="badgesSelector">
+        <input (change)="isChecked($event)" type="checkbox" />
+        <input (change)="isChecked($event)" type="checkbox" />
+        <input (change)="isChecked($event)" type="checkbox" />
+    </div>
+</section>
+<section>
+    <h3>Quantity</h3>
+    <select (change)="selectQuantity($event)">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+</section>
+<section>
+    <h3>{{ doTotal() }}</h3>
+</section>

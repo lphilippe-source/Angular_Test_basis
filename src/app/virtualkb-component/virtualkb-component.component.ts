@@ -31,7 +31,7 @@ export class VirtualkbComponentComponent {
 
   displayCode():void{
     let checkContent = this.arrCode.map((val,key)=>{
-      console.log('key: '+key,'value: '+val)
+      // console.log('key: '+key,'value: '+val)
           this["code"+key]=val
     })
   }
@@ -55,7 +55,7 @@ export class VirtualkbComponentComponent {
       this.nb = (Math.floor(Math.random()*16))
     }
     this.arrEmpty[this.nb]=value
-    console.log('nombre random indice: '+this.nb+' numéro: '+this.arrEmpty[this.nb])
+    // console.log('nombre random indice: '+this.nb+' numéro: '+this.arrEmpty[this.nb])
     })
   }
 }
