@@ -1,7 +1,7 @@
 <p>user-component works!</p>
 <div>
-    <input [value]="wallet" type="text">
-    <button>valider</button>
+    <input #wallet2 [value]="wallet" type="text">
+    <button (click)="submitWallet(wallet2.value, id.innerText)">valider</button>
 </div>
 <table  >
     <tr>
@@ -13,6 +13,7 @@
         <td>{{ user.name }}</td>
         <td>{{ user.firstname }}</td>
         <td #wallet>{{ user.wallet }}</td>
+        <td hidden #id>{{ user.id }}</td>
         <button (click)="editUser(wallet.innerText)">editer</button>
     </tr>
     
