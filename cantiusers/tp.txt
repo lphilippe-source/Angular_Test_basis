@@ -9,6 +9,13 @@ L'application doit permettre d'augmenter ou de diminuer le montant du "wallet"
 en effectuant les requêtes ajax correspondantes et afficher un message dans 
 l'interface afin d'informer l'utilisateur de l'issue de sa requête
 
+Exemples de requêtes:
+- Retire 10 au "wallet" de l'utilisateur d'id 5
+POST /user/credit/5?amount=10
+- Ajoute 10 au "wallet" de l'utilisateur d'id 5
+POST /user/credit/5?amount=10
+
+
 En option: ajouter un mécanisme de filtre en "full text" sur le nom des utilisateurs
 
 

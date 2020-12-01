@@ -1,9 +1,10 @@
 <p>user-component works!</p>
 <div>
-    <input #wallet2 [value]="wallet" type="text">
-    <button (click)="submitWallet(wallet2.value, id.innerText)">valider</button>
+    <h2 *ngIf ="errors || message">{{errors?errors.error.exceptionMessage:null}} {{message?message:null}}</h2>
+    <input #wallet2 [value]="wallet?wallet:'cagnotte'" type="text">
+    <button  *ngIf="isValid"  (click)="submitWallet(wallet2.value)">valider</button>
 </div>
-<table  >
+<table>
     <tr>
         <td>PRENOM</td>
         <td>NOM</td>
@@ -13,8 +14,7 @@
         <td>{{ user.name }}</td>
         <td>{{ user.firstname }}</td>
         <td #wallet>{{ user.wallet }}</td>
-        <td hidden #id>{{ user.id }}</td>
-        <button (click)="editUser(wallet.innerText)">editer</button>
+        <input hidden type="text" #userId [value]="user.id"/>
+        <button (click)="editUser(wallet.innerText, userId.value)">editer</button>
     </tr>
-    
 </table>
